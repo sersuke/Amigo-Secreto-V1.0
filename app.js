@@ -3,7 +3,7 @@
 let amigos =[]; //array
 
 function agregarAmigo(){ //funcion para agregar amigos
-   let input = document.getElementById('amigo').value.trim();
+   let input = document.getElementById('amigo').value;
    
    if (input === '') { //Validacion de entrada
         alert('Por favor, ingresa un nombre');
@@ -11,8 +11,9 @@ function agregarAmigo(){ //funcion para agregar amigos
         amigos.push(input);
         console.log(`Nombre válido: ${input}`);
        console.log(amigos.length);
+       mostrarAmigos(); //llamar a la funcion   
     }
-    limpiarInput();
+    limpiarInput();// llamar a la funcion
 }
 
 function limpiarInput (){ //limpiar input luego de ingresar un nombre
@@ -20,11 +21,11 @@ function limpiarInput (){ //limpiar input luego de ingresar un nombre
 }
 
 function mostrarAmigos() { //visualizar lista de amigos
-    let lista = document.getElementById ('lista de amigos');
-    document.createElement('li');
+    let lista = document.getElementById('listaAmigos');
+    let li = document.createElement('li');
     lista.innerHTML = ''; // limpiar lista antes de agregar nuevos elementos
 
-    amigos.forEach(amigos => {
+    amigos.forEach(amigo => {
         lista.innerHTML += `<li> ${amigo}</li>`;
     });
 
