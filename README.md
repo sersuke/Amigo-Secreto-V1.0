@@ -4,6 +4,7 @@ _<h1>Juego del Amigo Secreto.</h1>_
 
 <h4>¿Como funciona este juego?</h4>
 Es muy simple, solo debes de agregar los nombres de tus amigo o compañeros, de acuerdo a la imagen que se muestra a continuación.
+
 <img width="400" height="150" alt="Captura de pantalla 2025-08-03 195644" src="https://github.com/user-attachments/assets/b4d8444c-da72-46c5-8724-a9f2fc59cac7" />  
 
 Paso 1: Ingresar el nombre.
